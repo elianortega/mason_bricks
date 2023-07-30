@@ -1,5 +1,5 @@
 name: bricks_repository
-description: A new brick created with the Mason CLI.
+description: A brick that creates the basic repository structure to host your own custom bricks.
 
 version: 0.1.0
 
