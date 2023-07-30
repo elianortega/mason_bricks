@@ -30,7 +30,7 @@ mason make bricks_repository --repo_name mason_bricks --git_username elianortega
 
 | Variable       | Description                | Default      | Type     |
 | -------------- | -------------------------- | ------------ | -------- |
-| `git_username` | The git username           | git-username | `string` |
+| `git_username` | The git username           | username     | `string` |
 | `repo_name`    | The name of the repository | mason_bricks | `string` |
 
 ### Outputs 📦️

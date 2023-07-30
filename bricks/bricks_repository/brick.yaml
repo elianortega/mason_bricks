@@ -15,5 +15,5 @@ vars:
   git_username:
     type: string
     description: Your git username
-    default: git-username
+    default: username
     prompt: What is your git username?
