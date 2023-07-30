@@ -33,8 +33,14 @@ mason add <BRICK_NAME> --git-url https://github.com/elianortega/mason_bricks --g
 # add from git url (global)
 mason add -g <BRICK_NAME> --git-url https://github.com/elianortega/mason_bricks --git-path path/to/<BRICK_NAME>
 
-# example to add bricks_repository brick
-mason add -g bricks_repository --git-url https://github.com/elianortega/mason_bricks --git-path bricks/bricks_repository/
+# add from git url with path and ref
+mason add <BRICK_NAME> --git-url https://github.com/elianortega/mason_bricks --git-path path/to/<BRICK_NAME> --git-ref tag-name
+```
+
+Example for `bricks_repository`:
+
+```sh
+mason add -g bricks_repository --git-url https://github.com/elianortega/mason_bricks --git-path bricks/bricks_repository
 ```
 
 [1]: https://github.com/felangel/mason

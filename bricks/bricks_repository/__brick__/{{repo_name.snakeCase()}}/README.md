@@ -32,6 +32,9 @@ mason add <BRICK_NAME> --git-url https://github.com/{{git_username}}/{{repo_name
 
 # add from git url (global)
 mason add -g <BRICK_NAME> --git-url https://github.com/{{git_username}}/{{repo_name.snakeCase()}} --git-path path/to/<BRICK_NAME>
+
+# add from git url with path and ref
+mason add <BRICK_NAME> --git-url https://github.com/{{git_username}}/{{repo_name.snakeCase()}} --git-path path/to/<BRICK_NAME> --git-ref tag-name
 ```
 
 Example for `{{git_username}}_hello` brick.
