@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-A collection of <a href="https://github.com/felangel/mason">mason</a> bricks to simplify you development experience.
+A collection of <a href="https://github.com/felangel/mason">mason</a> bricks to simplify the development experience.
 </p>
 
 ---
@@ -24,7 +24,7 @@ A collection of <a href="https://github.com/felangel/mason">mason</a> bricks to 
 
 ### Adding a brick 🏗️️
 
-To add a brick that has not been published to brickhub.dev use one of the following commands:
+To add a brick that has not been published to [brickhub.dev][1] use one of the following commands:
 
 ```sh
 # add from git url
@@ -43,4 +43,4 @@ Example for `bricks_repository`:
 mason add -g bricks_repository --git-url https://github.com/elianortega/mason_bricks --git-path bricks/bricks_repository
 ```
 
-[1]: https://github.com/felangel/mason
+[1]: https://brickhub.dev/
