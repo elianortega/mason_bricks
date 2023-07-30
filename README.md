@@ -16,9 +16,9 @@ A collection of <a href="https://github.com/felangel/mason">mason</a> bricks to 
 
 ## Bricks 🧱
 
-| Brick                                                                                     | Description                                                                                | Version |
-| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------- |
-| [bricks_repository](https://github.com/elianortega/mason_bricks/bricks/bricks_repository) | A brick that creates the basic repository structure to host many of you own custom bricks. | 0.1.0   |
+| Brick                                                                                               | Description                                                                                | Version |
+| --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------- |
+| [bricks_repository](https://github.com/elianortega/mason_bricks/tree/main/bricks/bricks_repository) | A brick that creates the basic repository structure to host many of you own custom bricks. | 0.1.0   |
 
 ## Getting started 🚀
 

@@ -51,3 +51,5 @@ mason make bricks_repository --repo_name mason_bricks --git_username elianortega
     │       └── brick.yaml
     └── mason.yaml
 ```
+
+[1]: https://github.com/felangel/mason
