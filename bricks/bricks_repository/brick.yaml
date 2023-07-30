@@ -1,5 +1,6 @@
 name: bricks_repository
 description: A brick that creates the basic repository structure to host your own custom bricks.
+repository: https://github.com/elianortega/mason_bricks/tree/main/bricks/bricks_repository
 
 version: 0.1.0
 
