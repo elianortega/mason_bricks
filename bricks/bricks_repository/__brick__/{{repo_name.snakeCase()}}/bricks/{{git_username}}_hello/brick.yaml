@@ -1,0 +1,13 @@
+name: {{git_username}}_hello
+description: An example brick to greet your friends.
+version: 0.1.0
+
+environment:
+  mason: ">=0.1.0-dev.50 <0.1.0"
+
+vars:
+  name:
+    type: string
+    description: Your friends name
+    default: Dash
+    prompt: What is your friends name?

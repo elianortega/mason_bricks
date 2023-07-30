@@ -1,0 +1,19 @@
+name: bricks_repository
+description: A new brick created with the Mason CLI.
+
+version: 0.1.0
+
+environment:
+  mason: ">=0.1.0-dev.50 <0.1.0"
+
+vars:
+  repo_name:
+    type: string
+    description: The name of the repository
+    default: mason_bricks
+    prompt: How would you like to name the repository?
+  git_username:
+    type: string
+    description: Your git username
+    default: git-username
+    prompt: What is your git username?
