@@ -7,7 +7,7 @@ concurrency:
 on:
   pull_request:
     # To run this workflow only when certain files have changed, uncomment the
-    # `paths` key below and replace the list of paths  
+    # `paths` key below and replace the list of paths
     # paths:
     #   - "packages/{{package_name.snakeCase()}}/**"
     #   - ".github/workflows/{{package_name.snakeCase()}}.yaml"
@@ -16,7 +16,7 @@ on:
 
   push:
     # To run this workflow only when certain files have changed, uncomment the
-    # `paths` key below and replace the list of paths  
+    # `paths` key below and replace the list of paths
     # paths:
     #   - "packages/{{package_name.snakeCase()}}/**"
     #   - ".github/workflows/{{package_name.snakeCase()}}.yaml"

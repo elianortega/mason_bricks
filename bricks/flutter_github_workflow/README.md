@@ -79,7 +79,8 @@ jobs:
   build:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/dart_package.yml@v1
     with:
-      flutter_channel: stable
+      working_directory: packages/auth_repository
+      dart_sdk: stable
       min_coverage: 100
   # For further customization of this workflow, see: https://workflows.vgv.dev/docs/workflows/spell_check
   spell-check:
