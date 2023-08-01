@@ -16,11 +16,11 @@ vars:
     values:
       - dart_package
       - flutter_package
-  workflow_name:
+  package_name:
     type: string
-    description: Workflow name
+    description: The name of the package and workflow file
     default: main
-    prompt: How would you like to name your workflow?
+    prompt: Package/workflow name?
   min_coverage:
     type: number
     description: Minimum test coverage percentage
@@ -34,5 +34,5 @@ vars:
   spell_check:
     type: boolean
     description: Whether to add spell check workflow
-    default: true
-    prompt: Add spell check workflow?
+    default: false
+    prompt: Add spell check workflow? (requires cspell config file)

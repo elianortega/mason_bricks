@@ -1,4 +1,4 @@
-name: {{workflow_name.snakeCase()}}
+name: {{package_name.snakeCase()}}
 
 concurrency:
   {{=<% %>=}}group: ${{ github.workflow }}-${{ github.ref }}<%={{ }}=%>
@@ -9,8 +9,8 @@ on:
     # To run this workflow only when certain files have changed, uncomment the
     # `paths` key below and replace the list of paths  
     # paths:
-    #   - "packages/{{workflow_name.snakeCase()}}/**"
-    #   - ".github/workflows/{{workflow_name.snakeCase()}}.yaml"
+    #   - "packages/{{package_name.snakeCase()}}/**"
+    #   - ".github/workflows/{{package_name.snakeCase()}}.yaml"
     branches:
       - main
 
@@ -18,8 +18,8 @@ on:
     # To run this workflow only when certain files have changed, uncomment the
     # `paths` key below and replace the list of paths  
     # paths:
-    #   - "packages/{{workflow_name.snakeCase()}}/**"
-    #   - ".github/workflows/{{workflow_name.snakeCase()}}.yaml"
+    #   - "packages/{{package_name.snakeCase()}}/**"
+    #   - ".github/workflows/{{package_name.snakeCase()}}.yaml"
     branches:
       - main
 jobs:
@@ -30,6 +30,7 @@ jobs:
   build:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/{{#isFlutterPackage}}flutter_package{{/isFlutterPackage}}{{#isDartPackage}}dart_package{{/isDartPackage}}.yml@v1
     with:
+      # working_directory: packages/{{package_name.snakeCase()}}
       flutter_channel: stable
       min_coverage: {{min_coverage}}
   {{#spell_check}}# For further customization of this workflow, see: https://workflows.vgv.dev/docs/workflows/spell_check    

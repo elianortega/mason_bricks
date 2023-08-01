@@ -30,17 +30,17 @@ mason make flutter_github_workflow
 | Variable        | Description                                   | Default        | Type                                |
 | --------------- | --------------------------------------------- | -------------- | ----------------------------------- |
 | `workflow_type` | Type of the package                           | `dart_package` | [`dart_package`, `flutter_package`] |
-| `workflow_name` | Workflow name                                 | `main`         | `string`                            |
+| `package_name`  | The name of the package and workflow file     | `main`         | `string`                            |
 | `min_coverage`  | Minimum coverage percentage                   | `100`          | `number`                            |
 | `semantic_pr`   | Whether to add semantic pull request workflow | `true`         | `boolean`                           |
-| `spell_check`   | Whether to add spell check workflow           | `true`         | `boolean`                           |
+| `spell_check`   | Whether to add spell check workflow           | `false`        | `boolean`                           |
 
 ### Outputs 📦️
 
 Command:
 
 ```
-mason make flutter_github_workflow --workflow_type dart_package --workflow_name auth_repository --min_coverage 100 --semantic_pr true --spell_check true
+mason make flutter_github_workflow --workflow_type dart_package --package_name auth_repository --min_coverage 100 --semantic_pr true --spell_check true
 ```
 
 Output:
