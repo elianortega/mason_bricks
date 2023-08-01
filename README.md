@@ -16,15 +16,16 @@ A collection of <a href="https://github.com/felangel/mason">mason</a> bricks to 
 
 ## Bricks 🧱
 
-| Brick                                                                                               | Description                                                                                | Version |
-| --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------- |
-| [bricks_repository](https://github.com/elianortega/mason_bricks/tree/main/bricks/bricks_repository) | A brick that creates the basic repository structure to host many of you own custom bricks. | 0.1.0   |
+| Brick                                                                                                           | Description                                                                                                                                                                     | Version |
+| --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| [bricks_repository](https://github.com/elianortega/mason_bricks/tree/main/bricks/bricks_repository)             | A brick that creates the basic repository structure to host many of you own custom bricks.                                                                                      | 0.1.0   |
+| [flutter_github_workflow](https://github.com/elianortega/mason_bricks/tree/main/bricks/flutter_github_workflow) | A brick that creates a github workflow file using [very good workflows][vgv_workflows]. Supports: `flutter_package`, `dart_package`, `semantic_pull_request` and `spell_check`. | 0.1.0   |
 
 ## Getting started 🚀
 
 ### Adding a brick 🏗️️
 
-To add a brick that has not been published to [brickhub.dev][1] use one of the following commands:
+To add a brick that has not been published to [brickhub.dev][brickhub] use one of the following commands:
 
 ```sh
 # add from git url
@@ -37,10 +38,17 @@ mason add -g <BRICK_NAME> --git-url https://github.com/elianortega/mason_bricks 
 mason add <BRICK_NAME> --git-url https://github.com/elianortega/mason_bricks --git-path path/to/<BRICK_NAME> --git-ref tag-name
 ```
 
-Example for `bricks_repository`:
+#### bricks_repository
 
 ```sh
 mason add -g bricks_repository --git-url https://github.com/elianortega/mason_bricks --git-path bricks/bricks_repository
 ```
 
-[1]: https://brickhub.dev/
+### flutter_github_workflow
+
+```sh
+mason add -g flutter_github_workflow --git-url https://github.com/elianortega/mason_bricks --git-path bricks/flutter_github_workflow
+```
+
+[brickhub]: https://brickhub.dev/
+[vgv_workflows]: https://workflows.vgv.dev/

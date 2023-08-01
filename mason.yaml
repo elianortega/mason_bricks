@@ -1,3 +1,5 @@
 bricks:
   bricks_repository:
     path: bricks/bricks_repository
+  flutter_github_workflow:
+    path: bricks/flutter_github_workflow

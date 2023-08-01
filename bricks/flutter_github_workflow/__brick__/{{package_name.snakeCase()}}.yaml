@@ -1,0 +1,42 @@
+name: {{package_name.snakeCase()}}
+
+concurrency:
+  {{=<% %>=}}group: ${{ github.workflow }}-${{ github.ref }}<%={{ }}=%>
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    # To run this workflow only when certain files have changed, uncomment the
+    # `paths` key below and replace the list of paths
+    # paths:
+    #   - "packages/{{package_name.snakeCase()}}/**"
+    #   - ".github/workflows/{{package_name.snakeCase()}}.yaml"
+    branches:
+      - main
+
+  push:
+    # To run this workflow only when certain files have changed, uncomment the
+    # `paths` key below and replace the list of paths
+    # paths:
+    #   - "packages/{{package_name.snakeCase()}}/**"
+    #   - ".github/workflows/{{package_name.snakeCase()}}.yaml"
+    branches:
+      - main
+jobs:
+  {{#semantic_pr}}# For further customization of this workflow, see: https://workflows.vgv.dev/docs/workflows/semantic_pull_request
+  semantic-pull-request:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/semantic_pull_request.yml@v1{{/semantic_pr}}
+  # For further customization of this workflow, see: https://workflows.vgv.dev/docs/workflows/{{#isFlutterPackage}}flutter_package{{/isFlutterPackage}}{{#isDartPackage}}dart_package{{/isDartPackage}}
+  build:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/{{#isFlutterPackage}}flutter_package{{/isFlutterPackage}}{{#isDartPackage}}dart_package{{/isDartPackage}}.yml@v1
+    with:
+      # working_directory: packages/{{package_name.snakeCase()}}
+      {{#isFlutterPackage}}flutter_channel{{/isFlutterPackage}}{{#isDartPackage}}dart_sdk{{/isDartPackage}}: stable
+      min_coverage: {{min_coverage}}
+  {{#spell_check}}# For further customization of this workflow, see: https://workflows.vgv.dev/docs/workflows/spell_check    
+  spell-check:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/spell_check.yml@v1
+    with:
+      includes: |
+        **/*.md
+      modified_files_only: false{{/spell_check}}
