@@ -31,7 +31,7 @@ jobs:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/{{#isFlutterPackage}}flutter_package{{/isFlutterPackage}}{{#isDartPackage}}dart_package{{/isDartPackage}}.yml@v1
     with:
       # working_directory: packages/{{package_name.snakeCase()}}
-      flutter_channel: stable
+      {{#isFlutterPackage}}flutter_channel{{/isFlutterPackage}}{{#isDartPackage}}dart_sdk{{/isDartPackage}}: stable
       min_coverage: {{min_coverage}}
   {{#spell_check}}# For further customization of this workflow, see: https://workflows.vgv.dev/docs/workflows/spell_check    
   spell-check:
