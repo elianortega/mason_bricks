@@ -1,8 +1,8 @@
 name: flutter_github_workflow
-description: A new brick created with the Mason CLI.
-repository: https://github.com/my_org/my_repo
+description: A brick that creates a github workflow file using very good workflows.
+repository: https://github.com/elianortega/mason_bricks/tree/main/bricks/flutter_github_workflow
 
-version: 0.1.0+1
+version: 0.1.0
 
 environment:
   mason: ">=0.1.0-dev.50 <0.1.0"
