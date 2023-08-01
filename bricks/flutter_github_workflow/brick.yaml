@@ -1,0 +1,38 @@
+name: flutter_github_workflow
+description: A new brick created with the Mason CLI.
+repository: https://github.com/my_org/my_repo
+
+version: 0.1.0+1
+
+environment:
+  mason: ">=0.1.0-dev.50 <0.1.0"
+
+vars:
+  workflow_type:
+    type: enum
+    description: Workflow type
+    default: dart_package
+    prompt: What type of package is this?
+    values:
+      - dart_package
+      - flutter_package
+  workflow_name:
+    type: string
+    description: Workflow name
+    default: main
+    prompt: How would you like to name your workflow?
+  min_coverage:
+    type: number
+    description: Minimum test coverage percentage
+    default: 100
+    prompt: Min test coverage percentage?
+  semantic_pr:
+    type: boolean
+    description: Whether to add semantic pull request workflow
+    default: true
+    prompt: Add semantic pull request workflow?
+  spell_check:
+    type: boolean
+    description: Whether to add spell check workflow
+    default: true
+    prompt: Add spell check workflow?
