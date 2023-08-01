@@ -1,9 +1,9 @@
 # flutter_github_workflow
 
-[![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)][1]
+[![Powered by Mason](https://img.shields.io/endpoint?url=https%3A%2F%2Ftinyurl.com%2Fmason-badge)][mason]
 [![style: very good analysis][analysis_badge]][analysis_badge_link]
 
-A brick that creates a github workflow file using [very good workflows][2]. Supports: `flutter_package`, `dart_package`, `semantic_pull_request` and `spell_check`.
+A brick that creates a github workflow file using [very good workflows][vgv_workflows]. Supports: `flutter_package`, `dart_package`, `semantic_pull_request` and `spell_check`.
 
 ## Installation 🚀️
 
@@ -91,7 +91,7 @@ jobs:
       modified_files_only: false
 ```
 
-[1]: https://github.com/felangel/mason
-[2]: https://workflows.vgv.dev/
+[mason]: https://github.com/felangel/mason
+[vgv_workflows]: https://workflows.vgv.dev/
 [analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [analysis_badge_link]: https://pub.dev/packages/very_good_analysis
